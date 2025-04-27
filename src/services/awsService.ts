@@ -17,7 +17,7 @@ export const summarizeText = async (text: string): Promise<string[]> => {
     .map(sentence => sentence.trim());
   
   // Extract "important" sentences (simplistic algorithm for demo)
-  // In real implementation, would use AWS Comprehend to identify key phrases
+  // In real implementation, would use AWS Comprehend to identify key phrases and their confidence scores
   const keywordIndicators = ['important', 'significant', 'key', 'major', 'critical', 'essential', 'crucial'];
   
   let summary = sentences
