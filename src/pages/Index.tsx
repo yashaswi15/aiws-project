@@ -1,11 +1,10 @@
-
 import React, { useState } from 'react';
 import Header from '@/components/Header';
 import TextInput from '@/components/TextInput';
 import SummaryOutput from '@/components/SummaryOutput';
 import { summarizeText } from '@/services/awsService';
 import { Toaster } from '@/components/ui/toaster';
-import { useToast } from '@/components/ui/toast';
+import { useToast } from '@/hooks/use-toast';
 
 const Index = () => {
   const [summary, setSummary] = useState<string[]>([]);
